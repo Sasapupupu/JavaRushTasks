@@ -9,7 +9,12 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Scanner huinyaEbanaya = new Scanner(System.in);
+        int a = huinyaEbanaya.nextInt();
+        int b = huinyaEbanaya.nextInt();
+        int c = huinyaEbanaya.nextInt();
+
+        System.out.println((a + b + c) / 3);
 
     }
 }

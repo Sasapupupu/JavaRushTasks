@@ -15,7 +15,7 @@ public class Solution {
         do {
             System.out.println(inputLine);
             inputInt--;
-        } while (inputInt > 0 && !(inputInt > 5));
+        } while (inputInt > 0 && inputInt < 4);
 
     }
 }

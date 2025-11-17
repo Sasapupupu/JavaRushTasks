@@ -10,15 +10,12 @@ public class Solution {
     public static void main(String[] args) {
         double glass = 0.5;
         Scanner scanner = new Scanner(System.in);
-        boolean inputMism = scanner.nextBoolean();
+        boolean inputBoolean = scanner.nextBoolean();
 
-        if (inputMism = false) {
-            int Optimism = (int) Math.floor(glass);
-            System.out.println(Optimism);
-        } else if (inputMism = true) {
-            int Pessimism = (int) Math.ceil(glass);
-            System.out.println(Pessimism);
+        if (inputBoolean) {
+            System.out.println((int)Math.ceil(glass));
+        } else {
+            System.out.println((int)Math.floor(glass));
         }
-
     }
 }

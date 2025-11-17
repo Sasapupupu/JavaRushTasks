@@ -9,24 +9,15 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int min = scanner.nextInt();
-        int secondMin = scanner.nextInt();
-
-        if (min > secondMin) {
-            int temp = min;
-            min = secondMin;
-            secondMin = temp;
-        }
-
+        int min = Integer.MAX_VALUE;
+        int secondMin = Integer.MAX_VALUE;
         while (scanner.hasNextInt()) {
-            int number = scanner.nextInt();
-            if (min == secondMin && number > min) {
-                secondMin = number;
-            } else if (number < min) {
+            int inputNumber = scanner.nextInt();
+            if (inputNumber < min) {
                 secondMin = min;
-                min = number;
-            } else if (number > min && number < secondMin) {
-                secondMin = number;
+                min = inputNumber;
+            } else if (inputNumber > min && inputNumber < secondMin) {
+                secondMin = inputNumber;
             }
         }
         System.out.println(secondMin);

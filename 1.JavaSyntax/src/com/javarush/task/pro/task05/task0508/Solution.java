@@ -12,14 +12,23 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         strings = new String[6];
-        for (int j = 0; j < strings.length; j++) {
+
+        for (int i = 0; i < strings.length; i++) {
             String inputLine = scanner.nextLine();
-            strings[j] = inputLine;
+            strings[i] = inputLine;
         }
 
-        for (int k = 0; k < strings.length; k++) {
-            for (int g = 0; g < ; g++) {
-                
+        for (int i = 0; i < strings.length; i++) {
+            String str = strings[i];
+            for (int j = i + 1; j < strings.length; j++) {
+
+                if (str == null) {
+                    break;
+                }
+                if (str.equals(strings[j])) {
+                    strings[i] = null;
+                    strings[j] = null;
+                }
             }
         }
 

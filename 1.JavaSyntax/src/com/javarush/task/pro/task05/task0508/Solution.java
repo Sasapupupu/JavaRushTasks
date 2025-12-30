@@ -14,17 +14,16 @@ public class Solution {
         strings = new String[6];
 
         for (int i = 0; i < strings.length; i++) {
-            String inputLine = scanner.nextLine();
-            strings[i] = inputLine;
+            strings[i] = scanner.nextLine();
         }
 
         for (int i = 0; i < strings.length; i++) {
             String str = strings[i];
             for (int j = i + 1; j < strings.length; j++) {
-
                 if (str == null) {
                     break;
                 }
+
                 if (str.equals(strings[j])) {
                     strings[i] = null;
                     strings[j] = null;
